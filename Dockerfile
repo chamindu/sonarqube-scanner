@@ -10,3 +10,5 @@ RUN curl https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-s
 
 ENV SONAR_RUNNER_HOME=/root/sonar-scanner
 ENV PATH $PATH:/root/sonar-scanner/bin
+
+CMD sonar-scanner -Dsonar.projectBaseDir=./src
