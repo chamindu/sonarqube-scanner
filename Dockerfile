@@ -10,7 +10,7 @@ RUN curl https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-s
     && mv sonar-scanner-3.2.0.1227-linux sonar-scanner \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get update \
-    && apt-get install -y dotnet-sdk-2.2 nodejs
+    && apt-get install -y nodejs
 
 
 ENV SONAR_RUNNER_HOME=/root/sonar-scanner
